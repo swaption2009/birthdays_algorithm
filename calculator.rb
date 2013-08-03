@@ -1,13 +1,18 @@
-require 'require_all'
-require_all '*.rb'
+Dir[File.dirname(__FILE__) + '/*.rb'].each {|file| require file }
 
-def calculate(amount)
-  puts amount
-  group = Group.new(amount)
+
+def calculate(members_count)
+  puts members_count
+  group = Group.new(members_count)
   probability = Probability.new(group)
-  puts probability.all_birthdays_different
+  puts probability.birthday_at_same_day
 end
 
 calculate(365)
-#
+
+
+
+
+
+
 
