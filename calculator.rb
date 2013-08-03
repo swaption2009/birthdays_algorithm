@@ -8,4 +8,6 @@ def calculate(amount)
   puts probability.all_birthdays_different
 end
 
-calculate(366)
+calculate(365)
+#
+

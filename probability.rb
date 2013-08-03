@@ -13,3 +13,5 @@ class Probability
     1 - all_birthdays_different
   end
 end
+
+#
