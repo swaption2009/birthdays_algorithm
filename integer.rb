@@ -3,4 +3,3 @@ class Integer
     (1..self).reduce(:*)
   end
 end
-#
