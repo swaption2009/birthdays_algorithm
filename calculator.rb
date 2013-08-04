@@ -8,7 +8,7 @@ def calculate(members_count)
   puts probability.birthday_at_same_day
 end
 
-calculate(365)
+calculate(1)
 
 
 
