@@ -1,6 +1,5 @@
 Dir[File.dirname(__FILE__) + '/*.rb'].each {|file| require file }
 
-
 def calculate(members_count)
   puts members_count
   group = Group.new(members_count)
@@ -8,7 +7,7 @@ def calculate(members_count)
   puts probability.birthday_at_same_day
 end
 
-calculate(1)
+calculate(365)
 
 
 
