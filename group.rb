@@ -2,7 +2,7 @@ class Group
   attr_accessor :members_count
 
   def initialize(members_count)
-    count = members_count.to_f
+    count = members_count
     if count <= 0
       puts 'GOTCHA, GOTCHA!!!111'
     else

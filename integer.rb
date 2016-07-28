@@ -1,5 +1,11 @@
-class Integer
+require 'bigdecimal'
+
+class Numeric
   def fact
-    (1..self).reduce(:*)
+    (self <= 0) ? 1 : (1..self).reduce(:*)
+  end
+
+  def to_big_decimal
+    BigDecimal.new(self)
   end
 end

@@ -6,7 +6,7 @@ class Probability
   end
 
   def all_birthdays_different
-    365.fact / (365 - @members_count).fact * (365 ** @members_count)
+    365.fact.to_big_decimal.div ((365 - @members_count).fact * (365 ** @members_count))
   end
 
   def birthday_at_same_day
